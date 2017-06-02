@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title> Registration Page </title>
+<link rel="stylesheet" type="text/css" href="style/style.css">
+<style>
+	body,html{
+	height: 100%;
+	margin: 0;
+}
+
+</style>
+
+
+</head>
+
+<body>
+<div style="height: 10px;"></div>
+<div id ="cpage">
+<script>
+  document.getElementById("cpage").innerHTML = sessionStorage.getItem("page1");
+</script>
+</div>
+<div class="mains" >
+	
+  <div id="myySidenav" class="sideenav">
+  <a href="Twitter.com" id="twitter">Twitter</a>
+  <a href="Facebook.com" id="fb">Facebook</a>
+  <a href="gmail.com" id="mail">Gmail</a>
+  <a href="https://www.linkedin.com/company/kottackal-business-solutions-pvt-ltd-" id="likedin">Linkedin</a>
+
+</div>
+
+	<div id="sub">
+
+  
+		
+	<h3>REGISTRATION</h3>
+
+	<form action="userdata.html" name="registration" onSubmit="return(validate());">
+
+
+
+	<ul style="list-style-type: none;">
+  
+  		<li>
+  	  Name  :	
+  	  <input type="text" id="fname" name="fname" placeholder="First Name" class=" fname" required> 
+
+  	  <input type="text" name="lname" placeholder="Last Name" required>
+
+  	  	</li>
+  	  
+  	  	<li>
+  	User Email :	
+	<input type="email" id ="email" name="email" placeholder="yourmail@email.com" required="Please Enter valid email id"> </br>
+  	</li>
+
+  	<li>
+  	Password  :	<input type="password" name="password" id="pass" required" >
+  	</li>
+
+  	<li>
+  	Address   : <input type="text" name="paddress" id="paddress"  required="Please fill this field">
+  	</li>
+  	  		
+  	  		<li>
+  	  	Sex:		<input type="radio" name="sex" value="male" required="" >Male
+
+                <input type="radio" name="sex" value="Female" required="">Female
+
+  	  		</li>
+
+  	  		<li>
+  	  	District:	<select name="district" >
+
+ 			 <option value="-1" selected>select..</option>
+
+ 			 <option value="kerala">Kerala</option>
+
+  			<option value="UP">UP</option>
+
+  			<option value="Tamil">Tamil Nadu</option>
+
+  			<option value="gujarat">Gujarat</option>
+
+  		</select>
+
+  	  		</li>
+  	  			<li>
+  	  		<input type="submit" value="Submit Form" />
+  	  		 
+  	</li>
+
+  	
+  	
+  </ul>
+
+	</div>
+	</form>
+<script>
+    
+		function validate(){
+
+      
+			if(document.registration.password.value < 6){
+
+				alert("Error: Password must contain atleast  six characters!");
+				document.registration.fname.focus() ;
+
+        
+     			return false;
+
+			}
+      
+      var email = document.getElementById("email").innerHTML;
+        
+      localStorage.setItem('email',email);
+      //function mail(){
+
+      
+      
+        
+      }
+		
+  // }   
+		
+	
+
+</script>
+
+</div>
+<div id="gap" >
+  
+</div>
+<footer id="foo" >
+
+ <a href="" > Home  </a>
+
+      <span class = "foospace"/>
+
+      <a href="" >  About  </a>
+
+      <span class = "foospace"/>
+
+      <a href=""  > Services  </a>
+
+      <span class = "foospace"/>
+
+      <a href ="" > Work </a>
+  
+</footer>
+
+</body>
+</html>

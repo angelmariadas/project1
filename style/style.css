@@ -1,0 +1,272 @@
+#main{
+
+padding : 20px;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+
+z-index: 1;
+}
+.topcorner{
+
+	
+	position: absolute;
+	top: 40px;
+	right: 30px;
+ 	font-size: 20px;  
+
+}
+
+.topcorner a:hover{
+
+background-color: black;
+color: white;
+}
+
+
+
+.space {
+  padding: 5px 30px;
+  word-wrap: normal;
+  display: inline-block;
+}
+
+.spaces {
+
+	padding-left: 50%
+  
+  
+}
+
+#foo {
+	
+	height: 90px;
+	background-color: #5C5B5B;
+	text-align: center;
+	
+
+}
+
+#foo a:hover{
+	
+	
+	font-size: 17px;
+	background-color: white;
+	color: black;
+}
+
+.foospace{
+
+	word-wrap: normal;
+  display: inline-block;
+	padding:10px 50px;
+
+}
+
+#gap{
+
+	background-color: white; height: 10px;
+}
+
+.bleft{
+
+ cursor: pointer;
+ position: absolute;
+ color: black;
+ font-weight: bold;
+ top: 50%;
+ padding: 16px;
+ left: 0px;
+ 
+}
+
+.bright{
+
+	cursor: pointer;
+	position: absolute;
+	color: black;
+	font-weight: bold;
+	right: 0px;
+	top: 50%;
+	padding: 16px;
+}
+h1{
+	text-align: center;
+}
+#maintwo{
+	
+	background-color: lightgrey;
+	padding: 250px;
+	padding-right: 100px;
+	padding-left: 100px;
+	top: 1000px;
+}
+.headertwo p{
+
+	font-size: 25px;
+	
+}
+#logindiv{
+	top: 20%;
+	right: 10%;
+	width: 80%;
+	height: 50%;
+	position: absolute;
+	background-color: white;
+	
+	
+}
+
+#logindiv h2{
+	font-size: 25px;
+	text-align: center;
+}
+
+input{
+	margin-bottom: 20px;
+}
+
+
+.slidercontainer{
+
+	position: relative;
+	margin-top: 10%;
+	max-height: 1230px;
+	max-width: 930px;
+	overflow: hidden;
+	display: inline-block;
+}
+
+.slides{
+
+	
+	width: 1000px;
+}
+
+.rightdiv{
+	float: right;
+	margin-top: 10%;
+		display: inline-block;
+	position: absolute;
+	 height: 549px;
+	 width: 350px;
+
+}
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+   background-color: black;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+.hamburger{
+
+	font-size: 60px;
+	cursor: pointer;
+	top: 49px;
+	right: 130px;
+	position: fixed;
+	z-index: 2;
+}
+
+
+
+
+
+
+#sub{
+
+	top: 24%;
+	right: 10%;
+	left: 10%;
+	width: 80%;
+	height: 70%;
+
+	position: absolute;
+	background-color: white;
+}
+#sub h3{
+
+text-align: center;
+}
+input{
+	margin-bottom: 25px;
+}
+
+select{
+	margin-bottom: 25px;
+}
+
+#umain{
+background-image: url("/home/kottackal/Pictures/back.jpg");
+	
+}
+
+.mains{
+
+	background-image: url("/home/kottackal/Pictures/back.jpg");
+	margin-top: 3%;
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+#myySidenav a {
+    position: absolute;
+    left: -80px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+
+}
+
+#myySidenav a:hover {
+    left: 0;
+}
+
+#twitter {
+    top: 250px;
+    background-color: #4CAF50;
+}
+
+#fb {
+    top: 310px;
+    background-color: #2196F3;
+}
+
+#mail {
+    top: 370px;
+    background-color: #f44336;
+}
+
+#likedin {
+    top: 430px;
+    background-color: #555
+}
+

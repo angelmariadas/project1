@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>New Page</title>
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<body>
+
+	
+		<div id="main" style="background-color: white;">
+			<img src="/home/kottackal/Pictures/bikelogo.png" style="width: 250px; height: 70px">	
+			<div class = "topcorner">
+			<b>
+			<a href="" style="text-decoration-line: none;"> Home  </a>
+
+			<span class = "space"/>
+
+			<a href="#about" style="text-decoration-line: none;">  About  </a>
+
+			<span class = "space"/>
+
+			<a href="" style="text-decoration-line: none;" > Services  </a>
+
+			<span class = "space"/>
+
+			<a href ="" style="text-decoration-line: none;"> Work </a>
+
+
+			<a href="https://www.linkedin.com/company/kottackal-business-solutions-pvt-ltd-">
+			<img src="/home/kottackal/Pictures/logoin.png" style="width: 20px; height: 25px;"></a>
+
+			</b>
+
+			
+
+			<span class = "space"/>
+
+								
+			</div>
+			
+			</div>
+			<script>
+				var pagecontent = document.getElementById("main").innerHTML;
+				sessionStorage.setItem("page1",pagecontent);
+
+			</script>
+			<!--side navigation-->
+
+
+
+<div id="nav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+ <div id="logindiv">
+
+ <h2 > Login </h2>
+
+<form action="userdata.html" name="login" onSubmit="return(valid());">
+  <ul style="list-style-type: none;">
+  
+  		<li>
+  	User Email :	<input type="text" id="eemail" name="umail" required> </br>
+  	</li>
+  	<li>
+  		Password  :	<input type="password" name="password" id="pass" required" >
+  	</li>
+  	
+  	<li>
+  	  		<input type="submit" value="Submit Form" />
+  	  		 
+  	</li>
+<a href="register.html">New Registration</a>
+  </ul>
+  </form>
+  </div>
+</div>
+
+   <!--validating password-->
+	<script>
+	function valid(){
+			 var un = "a@gmail.com";
+			 var passw =	"a";
+			 var ma =	document.getElementById("eemail").value;
+			 var pass =	document.getElementById("pass").value;
+			 
+	if (un == ma  && passw == pass) {
+
+		return true;
+		
+				}
+				else{
+
+					alert("Error: Username or Password incorrect");
+		return false;
+
+				}
+
+
+			}
+	</script>
+
+	<!--end validation-->
+
+
+<span class="hamburger" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+		<script>
+			function openNav() {
+   			 document.getElementById("nav").style.width = "550px";
+				}
+
+			function closeNav() {
+    		document.getElementById("nav").style.width = "0";
+				}
+</script>
+
+<div>
+<!--End of navi-->
+
+
+<div>
+<
+<!--imageslider-->
+			<div class = "slidercontainer"  >
+			
+			<img class ="slides" src="/home/kottackal/Pictures/bike1.jpg" style="height: 549px;">
+			<img class= "slides" src="/home/kottackal/Pictures/bike3.jpg" style="height: 549px;"  >
+				
+				<img class= "slides" src="/home/kottackal/Pictures/bike2.jpg"style="height: 549px;" >
+
+				
+			<!--Arrows-->
+			<button class="bleft" onclick="plusDivs(-1)">&#10094;</button> 
+			<button class="bright" onclick="plusDivs(+1)">&#10095;</button>
+
+			</div>
+
+			<div class="rightdiv">
+			
+				<script type="text/javascript" src="http://100widgets.com/js_data.php?id=169"></script>
+
+					
+			<span class = "space"/>
+
+				<script type="text/javascript" src="http://100widgets.com/js_data.php?id=119"></script>
+	
+			</div>
+	</div>		
+
+    <script >  
+            var slideIndex = 1;
+			showDivs(slideIndex);
+
+			function plusDivs(n) {
+	  			showDivs(slideIndex += n);	
+			}
+
+			function showDivs(n) {
+  			var i;
+  			var x = document.getElementsByClassName("slides");
+  			if (n > x.length) {slideIndex = 1}    
+  			if (n < 1) {slideIndex = x.length}
+  			for (i = 0; i < x.length; i++) {
+    		 x[i].style.display = "none";  
+ 			 }
+  			x[slideIndex-1].style.display = "block";  
+  			 
+			}
+	</script> 
+	<!--end of image slider-->
+
+<div id= "maintwo">
+	<div class="headertwo">
+		<h1 ><a name="about">About Us</a></h1>
+		<p>
+
+BikesBooking is the leading online booking service for motorcycles, scooters, bicycles and ATVs. Arranging bike hire in 39 countries, we are the world's  biggest  bike  hire booking service. Working  with  leading  rental  companies,  we  provide  multilingual user-friendly website where users can find and book online wide range  of bikes in any corner of the world. BikesBooking guarantees the Best available prices, verified reviews from previous renters and no booking commissions!
+
+</p>
+
+	</div>
+	</div>
+	</head>
+
+<div id="gap" >
+	
+</div>
+<footer id="foo" >
+
+ <a href="" > Home  </a>
+
+			<span class = "foospace"/>
+
+			<a href="#maintwo" >  About  </a>
+
+			<span class = "foospace"/>
+
+			<a href=""  > Services  </a>
+
+			<span class = "foospace"/>
+
+			<a href ="" > Work </a>
+	
+</footer>
+
+</body>
+</html>
